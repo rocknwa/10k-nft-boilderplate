@@ -10,7 +10,7 @@ contract CoreNFT is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable {
        using Strings for uint256;
        uint256 private _nextTokenId;
        string private _baseURIExtended;
-   constructor(string memory baseURI_) ERC721("CoreNFT", "CORE") Ownable(msg.sender) {
+   constructor(string memory baseURI_) ERC721("LiskNFT", "LISK") Ownable(msg.sender) {
         _baseURIExtended = baseURI_;
         _nextTokenId = 0;
     }
